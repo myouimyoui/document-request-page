@@ -21,8 +21,7 @@ npm run dev
 ### AI Tools:
 
 1. Chat GPT
-2. Claude (Premium)
-3. Gemini (Pro)
+2. Gemini (Pro)
 
 ### Prompt:
 
