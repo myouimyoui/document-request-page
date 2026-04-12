@@ -6,6 +6,12 @@
 
 #### Installation
 
+Prerequisites
+Make sure the following are installed on your machine:
+
+[Node 18.13.0 or higher](https://nodejs.org/en) — required to run Svelte
+[Git](https://nodejs.org/en) — required to clone the repository
+
 To replicate and run this project follow the following steps using Windows Powershell:
 
 ```bash
@@ -20,8 +26,8 @@ npm run dev -- --open
 
 ### AI Tools:
 
-1. Chat GPT
-2. Gemini (Pro)
+1. Chat GPT - used to create the prompt for the webpage
+2. Gemini (Pro) - Webpage creation and refining the css
 
 ### Prompt:
 
