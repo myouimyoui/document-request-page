@@ -1,4 +1,4 @@
-## Tangcay, Aaron Ace P.
+## Tangcay
 
 #### Framework: Svelte JS
 
