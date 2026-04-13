@@ -45,7 +45,7 @@ File attachments:images AdDU logo
 
 ## Alumni Screens
 ### Login Screen
-![Login Alumni](assets/images/login-alumni.png)
+![Login Page](assets/images/login-page.png)
 ### Alumni Dashboard
 ![Alumni Dashboard](assets/images/alumni-dashboard.png)
 ### Alumni Request Document
