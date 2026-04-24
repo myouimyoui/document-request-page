@@ -49,6 +49,40 @@ git checkout -b feature/pwa-ready
 | `static/offline.html` | Offline fallback page shown when no cache & no network |
 | `src/routes/+layout.svelte` | Root layout — manifest link, PWA meta tags, SW registration |
 
+### Caching Strategies
+
+```
+App Shell (HTML, CSS, JS)          →  Cache First   (Cached on first visit, works offline)
+Images                             →  Cache First   (Falls back to /offline.html if not cached)
+Fonts (Google Fonts)               →  Cache First   (Cached on first visit)
+API / dynamic data                 →  Network First  (Fresh data, falls back to cache)
+Navigation (SvelteKit routes)      →  Serve / from cache (Client-side router handles the rest)
+```
+
+### Build & Run for Production
+
+The install prompt only appears on HTTPS or localhost with a **production build**:
+
+```bash
+# 1. Build for production
+npm run build
+
+# 2. Preview the production build
+npm run preview
+```
+
+Then open `http://localhost:4173`
+
+### Offline Stress Test
+1. Open browser and visit every page at least once while **online**
+   - Profile → My Impact → Projects → Donations
+2. Open DevTools → **Application** tab → **Service Workers**
+3. Check ✅ **Offline**
+4. Press **Ctrl + R** to refresh
+5. Everything — including images — still loads ✅
+
+---
+
 ### AI Tools:
 
 1. Gemini (Pro) - PWA prompt creation
